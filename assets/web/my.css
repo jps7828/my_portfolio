@@ -1104,7 +1104,13 @@
   
 }
 
+@media (max-width: 815px) {
 
+  .whatsapp, .backto-top{
+    display:none;
+  }
+
+}
 /* 
 [data-theme="dark"] {
 background-color: rgb(0, 60, 128) !important;
