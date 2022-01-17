@@ -1110,6 +1110,24 @@
     display:none;
   }
 
+  .social-share, .skill-share{
+    display:grid;
+    align-items: space-around!important;
+    justify-content:space-around!important;
+    text-align:center;
+  }
+
+  .title{
+    display:grid;
+    align-items: center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  .thumbnail > img {
+    width: 300px!important;
+  }
+
 }
 /* 
 [data-theme="dark"] {
