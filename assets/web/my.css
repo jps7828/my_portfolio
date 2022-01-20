@@ -532,12 +532,18 @@
   .white-version .backto-top > div {
     background-color: var(--color-white);
     box-shadow: var(--shadow-white-3); }
-    .white-version .backto-top > div svg {
+  .white-version .whatsapp > div {
+      background-color: var(--color-white);
+      box-shadow: var(--shadow-white-3); }
+  .white-version .backto-top > div svg {
       color: var(--color-primary); }
   
   .white-version .backto-top > div::after {
     transition: var(--transition);
     background: var(--gradient-red-hover); }
+    .white-version .whatsapp > div::after {
+      transition: var(--transition);
+      background: var(--gradient-red-hover); }
   
   .white-version .backto-top > div:hover svg {
     color: var(--color-white); }
@@ -1105,9 +1111,17 @@
 }
 
 @media (max-width: 815px) {
-
-  .whatsapp, .backto-top{
-    display:none;
+  #topLogo a img{
+    width: 30px !important;
+  }
+  .my-left-text{text-align: center;}
+  .whatsapp > div{
+    left: 2px !important;
+    bottom: 10px !important;
+  }
+  .backto-top > div{
+    right: 5px !important;
+    bottom: 10px !important;
   }
 
   .social-share, .skill-share{
@@ -1124,10 +1138,20 @@
     text-align:center!important;
   }
 
-  .thumbnail > img {
-    width: 300px!important;
+  .portfolio-thumbnail  {
+    width: 200px!important;
+    height: 300px!important;
   }
 
+  .social-icone{
+    text-align:center!important;
+  }
+  .social-icone a {
+    margin-right: 5px!important;
+  }
+
+  
+  
 }
 /* 
 [data-theme="dark"] {
@@ -1139,11 +1163,15 @@ background-color: rgb(0, 60, 128) !important;
 background-color: green !important;
 } */
 
+.portfolio-thumbnail  {
+  width: 350px!important;
+  height: 400px!important;
+}
 
 .whatsapp > div 
 {
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   left: 30px;
   cursor: pointer;
   z-index: 999;
